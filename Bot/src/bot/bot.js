@@ -19,7 +19,7 @@ const validarNumeroAction = addKeyword(["validar"]).addAction(
       const userNumber = ctx.body; // El número que el usuario envía
 
       // Consulta Axios a la base de datos para validar el número
-      const response = await axios.post('https://erick-guerrero-back-production.up.railway.app/checkTicket', {
+      const response = await axios.post('https://back-production-3b46.up.railway.app/checkTicket', {
         checkTicket: userNumber,
       });
 
@@ -82,9 +82,11 @@ const opcion4 = addKeyword(["4"]).addAction(
 
       //http://localhost:3002/getData
 
+      //https://back-production-3b46.up.railway.app/
+
       //https://erick-guerrero-back-production.up.railway.app/getData
 
-  const response = await axios.post('http://localhost:3002/getData', {
+  const response = await axios.post('https://back-production-3b46.up.railway.app/getData', {
     phoneNumber: phoneNumber,
   });
 
