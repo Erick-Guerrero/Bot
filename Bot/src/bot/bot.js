@@ -71,7 +71,7 @@ const opcion3 = addKeyword(["3"]).addAnswer(
   [flowSecundario]
 );
 
-const opcion4 = addKeyword(["4"]).addAction(
+const opcion4 = addKeyword(["4","tickets"]).addAction(
   async (ctx, { database, provider }) => {
     // Este bloque se ejecutará cuando se invoque la palabra clave "comprobante"
     try {
@@ -92,6 +92,12 @@ const opcion4 = addKeyword(["4"]).addAction(
 
   // Los datos obtenidos estarán en response.data
   const tickets = response.data;
+
+  if (tickets.data.length === 0) {
+    // Si no hay datos de tickets, enviar el mensaje correspondiente
+    await provider.sendMessage(phoneNumber, "No tiene tickets comprados el día de hoy.");
+    return;
+  }
 
 
       const ticketDetails = tickets.data.map((ticket) => {
@@ -163,7 +169,7 @@ const flowPrincipal = addKeyword(["hola", "ole", "alo", "fortune"])
       "https://erick-guerrero-front.vercel.app/eresganador",
       "3. Qué loterías juegan? conoce mas:",
       "https://erick-guerrero-front.vercel.app/",
-      "4. Para ver tus tickets envie la palabra tickets",
+      "4. Para ver tus tickets envie la palabra tickets o pulse 4",
       "5. Correo de contacto: norwichandcompany@gmail.com"
     ],
     async (ctx, { provider }) => {},
