@@ -164,11 +164,11 @@ const flowPrincipal = addKeyword(["hola", "ole", "alo", "fortune"])
     [
       "Te comparto los siguientes enlaces de interés sobre el proyecto:",
       "1. Quiero jugar, aprende a jugar aqui:",
-      "\nhttps://erick-guerrero-front.vercel.app/comojugar.",
+      "\nhttps://client-view-y598.vercel.app/comojugar",
       "2. ¿Gane? revisa tus numeros aqui:",
-      "https://erick-guerrero-front.vercel.app/eresganador",
+      "https://client-view-y598.vercel.app/eresganador",
       "3. Qué loterías juegan? conoce mas:",
-      "https://erick-guerrero-front.vercel.app/",
+      "https://client-view-y598.vercel.app/",
       "4. Para ver tus tickets envie la palabra tickets o pulse 4",
       "5. Correo de contacto: norwichandcompany@gmail.com"
     ],
