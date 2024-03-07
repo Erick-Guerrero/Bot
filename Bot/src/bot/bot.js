@@ -168,15 +168,15 @@ const flowPrincipal = addKeyword(["hola", "ole", "alo", "fortune"])
   .addAnswer("Hola! Soy Adrián, tu asistente y estoy aquí para ayudarte en lo que necesites:*")
   .addAnswer(
     [
-      "Te comparto los siguientes enlaces de interés sobre el proyecto:",
-      "1. Quiero jugar, aprende a jugar aqui:",
-      "\nhttps://www.pegatres.app/comojugar",
-      "2. ¿Gane? revisa tus numeros aqui:",
-      "https://www.pegatres.app/eresganador",
-      "3. Qué loterías juegan? conoce mas:",
-      "https://www.pegatres.app/sorteos",
-      "4. Para ver tus tickets envie la palabra tickets o pulse 4",
-      "5. Correo de contacto: norwichandcompany@gmail.com"
+      "Te comparto los siguientes enlaces de interés sobre Pega3:",
+      "1. Aprende a jugar aquí:",
+      "\n[Pega3](https://www.pegatres.app/comojugar)",
+      "2. ¿Gane? revisa tus números aquí:",
+      "\n[Pega3](https://www.pegatres.app/eresganador)",
+      "3. ¿Qué sorteos existen? conoce más:",
+      "\n[Pega3](https://www.pegatres.app/sorteos)",
+      "4. Para ver tus tickets envíe la palabra tickets o pulse 4.",
+    
     ],
     async (ctx, { provider }) => {},
     null,
