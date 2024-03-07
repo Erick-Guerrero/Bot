@@ -90,14 +90,20 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
     phoneNumber: phoneNumber,
   });
 
+        // Verificar si la respuesta indica que el cliente no fue encontrado
+        if (response.data.message === "Cliente no encontrado") {
+          await provider.sendMessage(phoneNumber, "El cliente no existe.");
+          return;
+        }
+  
+        // Verificar si no hay tickets para el cliente
+        if (response.data.message === "No se encontraron tickets para el cliente") {
+          await provider.sendMessage(phoneNumber, "No tiene tickets comprados el día de hoy.");
+          return;
+        }
+
   // Los datos obtenidos estarán en response.data
   const tickets = response.data;
-
-  if (tickets.data.length === 0) {
-    // Si no hay datos de tickets, enviar el mensaje correspondiente
-    await provider.sendMessage(phoneNumber, "No tiene tickets comprados el día de hoy.");
-    return;
-  }
 
 
       const ticketDetails = tickets.data.map((ticket) => {
