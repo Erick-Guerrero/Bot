@@ -33,21 +33,21 @@ const opcion4 = addKeyword(["4"]).addAction(
   const tickets = response.data;
 
 
-      const ticketDetails = tickets.data.map((ticket) => {
-        return {
-          lotteryName: ticket.lotteryName,
-          lotteryHr: ticket.lotteryHr,
-          validationCode: ticket.validationCode,
-          day: moment(ticket.createdAt).format("YYYY-MM-DD"),
-          hr: moment(ticket.createdAt).format("HH:mm:ss"),
-          id: ticket.idTicket,
-          total: ticket.total,
-          numbers: ticket.TicketNumbers.map((tn) => ({
+  const ticketDetails = Array.isArray(tickets.data) ? tickets.data.map((ticket) => {
+    return {
+        lotteryName: ticket.lotteryName,
+        lotteryHr: ticket.lotteryHr,
+        validationCode: ticket.validationCode,
+        day: moment(ticket.createdAt).format("YYYY-MM-DD"),
+        hr: moment(ticket.createdAt).format("HH:mm:ss"),
+        id: ticket.idTicket,
+        total: ticket.total,
+        numbers: ticket.TicketNumbers.map((tn) => ({
             number: tn.number,
             bet: tn.bet,
-          })),
-        };
-      });
+        })),
+    };
+}) : [];
 
       let prov = provider.getInstance();
 
