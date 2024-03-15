@@ -1,0 +1,104 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0EF76F00CB37596BCF7',
+    participant: undefined
+  },
+  messageTimestamp: 1710526791,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_08ed52e6-43ba-4f84-b03f-a56f66bb3025',
+  keyword: 'key_5c968060-4c99-4015-ab5e-661cad3006b7',
+  answer: 'Hola! Soy Adrián, tu asistente y estoy aquí para ayudarte en lo que necesites:*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b1f3bc7f944640e2b59dad3b48c6f873'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_83b487a1-57fe-4164-a341-917de8e8c766',
+  keyword: 'ans_08ed52e6-43ba-4f84-b03f-a56f66bb3025',
+  answer: 'Te comparto los siguientes enlaces de interés sobre Pega3:\n' +
+    '1. Aprende a jugar aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/comojugar\n' +
+    '2. ¿Gane? revisa tus números aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/eresganador\n' +
+    '3. ¿Qué sorteos existen? conoce más:\n' +
+    '\n' +
+    'https://www.pegatres.app/sorteos\n' +
+    '4. Para ver tus tickets envíe la palabra tickets o pulse 4.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '84b238d50fd1a725aab576f4fb7f9bc8'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB033B04731EF04198D75',
+    participant: undefined
+  },
+  messageTimestamp: 1710526793,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3c5cfe93-fc6a-4dee-8f5e-4d7dd6c60cdf',
+  keyword: 'key_0c2ab581-ac91-401f-b065-fdfd5f38f950',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '182f1d7a1a617a89dc102853d2a746b5'
+}

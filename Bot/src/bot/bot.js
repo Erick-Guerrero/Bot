@@ -84,7 +84,8 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
 
       //https://back-production-3b46.up.railway.app/
 
-      //https://erick-guerrero-back-production.up.railway.app/getData
+      //https://back-production-3b46.up.railway.app/getData
+      //https://prueba-back-production-ec63.up.railway.app/
 
   const response = await axios.post('https://back-production-3b46.up.railway.app/getData', {
     phoneNumber: phoneNumber,
@@ -152,7 +153,7 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
       });
 
       // Agregar la URL al final del mensaje
-      message += `\nPara más detalles, visita: https://erick-guerrero-front.vercel.app/`;
+      message += `\nPara más detalles, visita: https://www.pegatres.app/`;
 
       // Enviar el mensaje formateado al cliente
       await provider.sendMessage(phoneNumber, message, {
@@ -170,11 +171,11 @@ const flowPrincipal = addKeyword(["hola", "ole", "alo", "fortune"])
     [
       "Te comparto los siguientes enlaces de interés sobre Pega3:",
       "1. Aprende a jugar aquí:",
-      "\n[Pega3](https://www.pegatres.app/comojugar)",
+      "\nhttps://www.pegatres.app/comojugar",
       "2. ¿Gane? revisa tus números aquí:",
-      "\n[Pega3](https://www.pegatres.app/eresganador)",
+      "\nhttps://www.pegatres.app/eresganador",
       "3. ¿Qué sorteos existen? conoce más:",
-      "\n[Pega3](https://www.pegatres.app/sorteos)",
+      "\nhttps://www.pegatres.app/sorteos",
       "4. Para ver tus tickets envíe la palabra tickets o pulse 4.",
     
     ],
