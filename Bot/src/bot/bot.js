@@ -23,7 +23,7 @@ const opcion4 = addKeyword(["4"]).addAction(
 
       //http://localhost:3002/getData
 
-      //https://erick-guerrero-back-production.up.railway.app/getData
+      //https://back-production-3b46.up.railway.app/getData
 
   const response = await axios.post('https://back-production-3b46.up.railway.app/getData', {
     phoneNumber: phoneNumber,
@@ -79,7 +79,7 @@ const opcion4 = addKeyword(["4"]).addAction(
       });
 
       // Agregar la URL al final del mensaje
-      message += `\nPara más detalles, visita: https://erick-guerrero-front.vercel.app/`;
+      message += `\nPara más detalles, visita: https://www.pegatres.app/`;
 
       // Enviar el mensaje formateado al cliente
       await provider.sendMessage(phoneNumber, message, {

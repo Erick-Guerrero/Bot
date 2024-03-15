@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5491165417871@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0EF76F00CB37596BCF7',
+    id: '3EB00791F9FEF0381A968C',
     participant: undefined
   },
-  messageTimestamp: 1710526791,
+  messageTimestamp: 1710529657,
   pushName: 'Gaston',
   broadcast: false,
   message: Message {
@@ -19,8 +19,8 @@
   from: '5491165417871'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_08ed52e6-43ba-4f84-b03f-a56f66bb3025',
-  keyword: 'key_5c968060-4c99-4015-ab5e-661cad3006b7',
+  ref: 'ans_89cba2f1-4c57-43e7-ac61-fb0c828cf5bd',
+  keyword: 'key_c6c46496-5090-4c11-bc40-dcd8f7c592cd',
   answer: 'Hola! Soy Adrián, tu asistente y estoy aquí para ayudarte en lo que necesites:*',
   options: {
     media: null,
@@ -34,11 +34,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b1f3bc7f944640e2b59dad3b48c6f873'
+  refSerialize: '3a4ef681ce82440af646dc980d7b79ae'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_83b487a1-57fe-4164-a341-917de8e8c766',
-  keyword: 'ans_08ed52e6-43ba-4f84-b03f-a56f66bb3025',
+  ref: 'ans_89f2926e-04ad-4b56-90f0-5135c9d9e021',
+  keyword: 'ans_89cba2f1-4c57-43e7-ac61-fb0c828cf5bd',
   answer: 'Te comparto los siguientes enlaces de interés sobre Pega3:\n' +
     '1. Aprende a jugar aquí:\n' +
     '\n' +
@@ -62,16 +62,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '84b238d50fd1a725aab576f4fb7f9bc8'
+  refSerialize: 'e35d529b4ea33393ba7143e6b11c6d30'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5491165417871@s.whatsapp.net',
     fromMe: false,
-    id: '3EB033B04731EF04198D75',
+    id: '3EB0D53C74BCDFAD87EF33',
     participant: undefined
   },
-  messageTimestamp: 1710526793,
+  messageTimestamp: 1710529658,
   pushName: 'Gaston',
   broadcast: false,
   message: Message {
@@ -85,8 +85,8 @@
   from: '5491165417871'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_3c5cfe93-fc6a-4dee-8f5e-4d7dd6c60cdf',
-  keyword: 'key_0c2ab581-ac91-401f-b065-fdfd5f38f950',
+  ref: 'ans_f04b7219-9933-4ca3-9322-7ace013b64d5',
+  keyword: 'key_48d457c1-eac0-46ac-8714-72e8280ade65',
   answer: '__call_action__',
   options: {
     media: null,
@@ -100,5 +100,109 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '182f1d7a1a617a89dc102853d2a746b5'
+  refSerialize: '39d09c09fe39416868592095d2bceba0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0798DEB2B03731DEAA0',
+    participant: undefined
+  },
+  messageTimestamp: 1710529721,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: 'HOLA',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'HOLA',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_89cba2f1-4c57-43e7-ac61-fb0c828cf5bd',
+  keyword: 'key_c6c46496-5090-4c11-bc40-dcd8f7c592cd',
+  answer: 'Hola! Soy Adrián, tu asistente y estoy aquí para ayudarte en lo que necesites:*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '3a4ef681ce82440af646dc980d7b79ae'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_89f2926e-04ad-4b56-90f0-5135c9d9e021',
+  keyword: 'ans_89cba2f1-4c57-43e7-ac61-fb0c828cf5bd',
+  answer: 'Te comparto los siguientes enlaces de interés sobre Pega3:\n' +
+    '1. Aprende a jugar aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/comojugar\n' +
+    '2. ¿Gane? revisa tus números aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/eresganador\n' +
+    '3. ¿Qué sorteos existen? conoce más:\n' +
+    '\n' +
+    'https://www.pegatres.app/sorteos\n' +
+    '4. Para ver tus tickets envíe la palabra tickets o pulse 4.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'e35d529b4ea33393ba7143e6b11c6d30'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0128CEF6412041427A7',
+    participant: undefined
+  },
+  messageTimestamp: 1710529723,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f04b7219-9933-4ca3-9322-7ace013b64d5',
+  keyword: 'key_48d457c1-eac0-46ac-8714-72e8280ade65',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '39d09c09fe39416868592095d2bceba0'
 }
