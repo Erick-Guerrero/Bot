@@ -12,7 +12,7 @@ const axios = require('axios');
 
 const adapterDB = new MockAdapter();
 
-const opcion4 = addKeyword(["4"]).addAction(
+const opcion4 = addKeyword(["4","tickets"]).addAction(
   async (ctx, { database, provider }) => {
     // Este bloque se ejecutará cuando se invoque la palabra clave "comprobante"
     try {
