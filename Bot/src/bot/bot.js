@@ -56,7 +56,7 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
         "YYYY-MM-DD"
       )}*\n\n`;
 
-      message += `*Fortune Numbers*\n\n`;
+      message += `*Pega3*\n\n`;
 
       ticketDetails.forEach((ticket) => {
         message += `*Fecha:* ${ticket.day}\n`;
@@ -150,7 +150,7 @@ const opcion6 = addKeyword(["4","tickets"]).addAction(
         "YYYY-MM-DD"
       )}*\n\n`;
 
-      message += `*Fortune Numbers*\n\n`;
+      message += `*Pega3*\n\n`;
 
       ticketDetails.forEach((ticket) => {
         message += `*Fecha:* ${ticket.day}\n`;
