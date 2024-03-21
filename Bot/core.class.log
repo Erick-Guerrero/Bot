@@ -1,0 +1,149 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3A882CA0819FA9447EEC',
+    participant: undefined
+  },
+  messageTimestamp: 1711039233,
+  pushName: 'Gaston',
+  broadcast: false,
+  messageStubType: 2,
+  messageStubParameters: [ 'No session record' ],
+  body: undefined,
+  from: '5491165417871'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3A882CA0819FA9447EEC',
+    participant: undefined
+  },
+  messageTimestamp: 1711039233,
+  pushName: 'Gaston',
+  broadcast: false,
+  messageStubType: 2,
+  messageStubParameters: [ 'No session record' ],
+  body: undefined,
+  from: '5491165417871'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3A882CA0819FA9447EEC',
+    participant: undefined
+  },
+  messageTimestamp: 1711039234,
+  pushName: 'Gaston',
+  broadcast: false,
+  messageStubType: 2,
+  messageStubParameters: [ 'No session record' ],
+  body: undefined,
+  from: '5491165417871'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3A882CA0819FA9447EEC',
+    participant: undefined
+  },
+  messageTimestamp: 1711039235,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_40878eb2-fc8c-40b9-bff0-03a5e5579077',
+  keyword: 'key_75836f56-455f-4e2c-836a-1589cb9d749a',
+  answer: 'Hola! Soy Adrián, tu asistente y estoy aquí para ayudarte en lo que necesites:*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2b76713b4f691047144f8c8cfba2a706'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_023dca69-df6c-4699-be06-5959c35ee882',
+  keyword: 'ans_40878eb2-fc8c-40b9-bff0-03a5e5579077',
+  answer: 'Te comparto los siguientes enlaces de interés sobre Pega3:\n' +
+    '1. Aprende a jugar aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/comojugar\n' +
+    '2. ¿Gane? revisa tus números aquí:\n' +
+    '\n' +
+    'https://www.pegatres.app/eresganador\n' +
+    '3. ¿Qué sorteos existen? conoce más:\n' +
+    '\n' +
+    'https://www.pegatres.app/sorteos\n' +
+    '4. Para ver tus tickets envíe la palabra tickets o pulse 4.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '04dd600a1b8ad7ba6ad5de55988c042e'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5491165417871@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF799D6995C7816AF4E',
+    participant: undefined
+  },
+  messageTimestamp: 1711039238,
+  pushName: 'Gaston',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '5491165417871'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4165bf93-7243-475d-b245-7ff79333d25f',
+  keyword: 'key_73fa368e-5b12-4d5d-98ec-f15efb33a1f3',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '9f9093a3cfcd726f347eb40988ca226e'
+}

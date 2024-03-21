@@ -112,6 +112,7 @@ const flowPrincipal = addKeyword(["hola", "ole", "alo", "fortune"])
 
 const adapterFlow = createFlow([flowPrincipal]);
 
+
 const adapterProvider = createProvider(BaileysProvider);
 const bot = createBot({
   flow: adapterFlow,
