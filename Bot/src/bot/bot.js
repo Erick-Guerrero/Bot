@@ -36,7 +36,7 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
   const ticketDetails = Array.isArray(tickets.data) ? tickets.data.map((ticket) => {
     return {
         lotteryName: ticket.lotteryName,
-        lotteryHr: ticket.lotteryHr,
+        hrLotteryClient: ticket.hrLotteryClient,
         validationCode: ticket.validationCode,
         day: moment(ticket.createdAt).format("YYYY-MM-DD"),
         hr: moment(ticket.createdAt).format("HH:mm:ss"),
@@ -63,101 +63,7 @@ const opcion4 = addKeyword(["4","tickets"]).addAction(
         message += `*Hora:* ${ticket.hr}\n`;
         message += `*ID del Ticket:* ${ticket.id}\n`;
         message += `*N. Validacion:* ${ticket.validationCode}\n`;
-        message += `*Loteria:* ${ticket.lotteryName} - ${ticket.lotteryHr}\n\n`;
-        message += `*Números Apostados:*\n\n`;
-
-        ticket.numbers.forEach((number) => {
-          message += `- Número: ${
-            number.number === 100
-              ? "00"
-              : number.number.toString().padStart(2, "0")
-          } - Monto: ${number.bet.toString().padStart(3, "")}\n`;
-        });
-
-        message += `\n*Total Ticket:* ${ticket.total}`;
-        message += "\n\n------------------\n\n"; // Separador entre tickets
-      });
-
-      // Agregar la URL al final del mensaje
-      message += `\nPara más detalles, visita: https://www.pegatres.app/`;
-
-      // Enviar el mensaje formateado al cliente
-      await provider.sendMessage(phoneNumber, message, {
-        contentType: "text/markdown",
-      });
-    } catch (error) {
-      console.error("Error al generar el comprobante:", error);
-    }
-  }
-);
-
-const opcion6 = addKeyword(["4","tickets"]).addAction(
-  async (ctx, { database, provider }) => {
-    // Este bloque se ejecutará cuando se invoque la palabra clave "comprobante"
-    try {
-      // Obtener el número de teléfono del cliente
-      const phoneNumber = ctx.from;
-
-      // Consulta Axios a la otra base de datos
-
-      //http://localhost:3002/getData
-
-      //https://back-production-3b46.up.railway.app/
-
-      //https://back-production-3b46.up.railway.app/getData
-      //https://prueba-back-production-ec63.up.railway.app/
-
-  const response = await axios.post('https://back-production-3b46.up.railway.app/getData', {
-    phoneNumber: phoneNumber,
-  });
-
-        // // Verificar si la respuesta indica que el cliente no fue encontrado
-        // if (response.data.message === "Cliente no encontrado") {
-        //   await provider.sendMessage(phoneNumber, "El cliente no existe.");
-        //   return;
-        // }
-  
-        // // Verificar si no hay tickets para el cliente
-        // if (response.data.message === "No se encontraron tickets para el cliente") {
-        //   await provider.sendMessage(phoneNumber, "No tiene tickets comprados el día de hoy.");
-        //   return;
-        // }
-
-  // Los datos obtenidos estarán en response.data
-  const tickets = response.data;
-
-
-      const ticketDetails = tickets.data.map((ticket) => {
-        return {
-          lotteryName: ticket.lotteryName,
-          lotteryHr: ticket.lotteryHr,
-          validationCode: ticket.validationCode,
-          day: moment(ticket.createdAt).format("YYYY-MM-DD"),
-          hr: moment(ticket.createdAt).format("HH:mm:ss"),
-          id: ticket.idTicket,
-          total: ticket.total,
-          numbers: ticket.TicketNumbers.map((tn) => ({
-            number: tn.number,
-            bet: tn.bet,
-          })),
-        };
-      });
-
-      let prov = provider.getInstance();
-
-      // Construir el mensaje en formato Markdown
-      let message = `*Detalles de los comprobantes para el ${moment().format(
-        "YYYY-MM-DD"
-      )}*\n\n`;
-
-      message += `*Pega3*\n\n`;
-
-      ticketDetails.forEach((ticket) => {
-        message += `*Fecha:* ${ticket.day}\n`;
-        message += `*Hora:* ${ticket.hr}\n`;
-        message += `*ID del Ticket:* ${ticket.id}\n`;
-        message += `*N. Validacion:* ${ticket.validationCode}\n`;
-        message += `*Loteria:* ${ticket.lotteryName} - ${ticket.lotteryHr}\n\n`;
+        message += `*Loteria:* ${ticket.lotteryName} - ${ticket.hrLotteryClient}\n\n`;
         message += `*Números Apostados:*\n\n`;
 
         ticket.numbers.forEach((number) => {
